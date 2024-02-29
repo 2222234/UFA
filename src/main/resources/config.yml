@@ -1,0 +1,16 @@
+##同时运行游戏限制
+#maxgames: 5
+##是否开启游戏日志
+#log: true
+minplayer: 2
+balplayer: true
+countdown: 10
+preparetime: 120
+gametime: 600
+freetime: 60
+eventtime: 120
+settlementtime: 5
+rewardmultiple: 100
+rewardmultiplelist: [ 1.5,1.0,0.5 ]
+volume: 1.0
+pitch: 1.0

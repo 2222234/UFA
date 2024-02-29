@@ -1,0 +1,8 @@
+name: UFA
+version: '${version}'
+main: com.rbc.ufa.UFA
+api-version: '1.16'
+author: '2222234'
+softdepend:
+  - Essentials
+  - GunFight

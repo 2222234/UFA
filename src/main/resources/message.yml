@@ -1,0 +1,135 @@
+name: '§9[UFA]§r'
+version: '2.0'
+notfindmessage: '§c§l未找到文本§c§r'
+notfind: '§c§l未知§c§r'
+submessage: '§7§l可能的指令'
+nopermission: '§4§l你没有权限'
+reload: '§2§l重载配置文件'
+message:
+  map:
+    message:
+      block_remove: '§4§l得分点{num}移除'
+      area_remove: '§4§l刷新区域{num}移除'
+      team_remove: '§4§l队伍{num}移除'
+      check: '§a§l地图检查通过'
+    info:
+      block_tip: '§2§l得分点信息'
+      block: '§2§l得分点{num} 位置世界{world} §2§l位置{location} §2§l分数{score} §2§l重置时间{reptime} §2§l下次重置时间{counttime}'
+      area_tip: '§2§l刷新区域信息'
+      area: '§2§l刷新区域{num} 位置1世界{world1} §2§l位置1{location1} §2§l位置2世界{world2} §2§l位置2{location2} §2§l重置时间{reptime} §2§l下次重置时间{counttime}'
+      team_tip: '§2§l队伍信息'
+      team: '§2§l队伍{num} 队名{name} §2§l队员{mates} 分数{score} 准备区域 位置1世界{prepareworld1} §2§l位置1{preparelocation1} §2§l位置2世界{prepareworld2} §2§l位置2{preparelocation2} §2§l出生区域 位置1世界{spawnworld1} §2§l位置1{spawnlocation1} §2§l位置2世界{spawnworld2} §2§l位置2{spawnlocation2} 初始背包 位置世界{initbagworld} §2§l位置{initbaglocation}'
+      tip: '§2§l地图信息'
+      map: '§2§l地图名{name} §2§l世界{world} 区域点1世界{world1} 区域点1{location1} 区域点2世界{world2} 区域点2{location2}'
+      set: '§2§l击杀得分{killscore} 友伤{accidentalinjury} 击杀队友惩罚{killmatepunish} 最大血量{maxblood} 随机事件{randomevents} 随机分队{randomteam} 随机出生{randomspawn}'
+    error:
+      world_and_area: '§c§l地图 区域点1位置1世界{world1} 区域点1位置1{location1} 区域点2世界{world2} 区域点2{location2}'
+      block: '§c§l刷新点{num} 位置世界{world} 位置{location}'
+      area: '§c§l刷新区域{num} 位置1世界{world1} 位置1{location1} 位置2世界{world2} 位置2{location2}'
+      maxblood: '§c§l不合法的血量'
+      team_name: '§c§l队伍{num} 未定义队名'
+      team_prepare: '§c§l队伍{num} 准备区域 位置1世界{world1} 位置1{location1} 位置2世界{world2} 位置2{location2}'
+      team_spawn: '§c§l队伍{num} 出生区域 位置1世界{world1} 位置1{location1} 位置2世界{world2} 位置2{location2}'
+      team_initbag: '§c§l队伍{num} 初始背包 位置1世界{world} 位置1{location}'
+      team_initbag_null: '§c§l队伍{num} 初始背包为空'
+      check: '§c§l地图检查未通过 原因-'
+  game:
+    rep:
+      map_block: '{game}§a得分点{num}替换'
+      map_area: '{game}§a刷新区域{num}替换'
+    message:
+      game: '§e§l[§r{game}§r§e§l]§r'
+      stop: '{game}§a§l游戏结束'
+      prepare_vote_to_game: '{game}§2§l{player}投票跳过准备{vote}/{all}'
+      prepare_votesuccess: '{game}§a§l正在跳过准备'
+      prepare_bossbar: '{game}§a§l准备阶段-{time}'
+      prepare_countdown_title: '§b§l游戏即将开始'
+      prepare_countdown_subtitle: '§a§l{time}'
+      game_jointeam_title: '§e§l游戏开始'
+      game_jointeam_subtitle: '§l你被分到队伍{team}'
+      game_unjointeam_title: '§e§l游戏开始'
+      game_unjointeam_subtitle: '§l你是旁观者'
+      game_lessplayer_title: '§a§l人数不足 游戏取消'
+      game_lessplayer_subtitle: '§c§l{players}/{minplayer}'
+      game_start: '{game}§e§l游戏开始'
+      game_bossbar: '{game}§e§l游戏进行中-{time}'
+      game_bossbar_event: '{game}§e§l游戏进行中-{time} - 事件{event}§e§l-{eventtime}'
+      game_balmate: '{game}§a§l你被平衡到了{team}'
+      game_yourmates: '{game}§e§l你的队伍-{team} 队员{mates}'
+      game_mates: '{game}§e§l队伍-{team} 队员{mates}'
+      game_repblock: '{game}§3§l一处信标熄灭了'
+      game_suicide: '{game}§c§l{team}-{player}§c§l自杀了'
+      game_getscore_block: '{game}§b§l{team}-{player}§b§l挖掉了钻石块获得了{score}分'
+      game_getscore_kill: '{game}§c§l{killteam}-{killplayer}§c§l击杀了{victeam}-{vicplayer}§c§l获得了{score}分'
+      game_killmate: '{game}§4§l{team}-{killer}§4§l击杀了队友{vic}'
+      game_killmatepunish: '{game}§4§l{team}-{killer}§4§l击杀了队友{vic}惩罚了{killmatepunish}分'
+      game_actionbar: '§b§l团队分数{teamscore} §e§l个人分数{playerscore} §c§l击杀{kill} 死亡{die} KD{kd}'
+      game_qj: '{game}§9§l使用/gunfight game join重新加入游戏'
+      game_joinsuccess: '{game}§a§l{player}加入成功'
+      game_countdown: '{game}§e§l倒计时{time}'
+      game_stop: '{game}§e§l战斗结束'
+      settlement_bossbar: '{game}§a§l结算'
+      settlement_partition_title: '§r§l|§r'
+      settlement_partition_subtitle: '§r§l-§r'
+      settlement_win_title: '§b§l胜利'
+      settlement_wins_subtitle: '§e§l胜利属于{wins}'
+      settlement_draw_title: '§f§l平局'
+      settlement_lose_title: '§c§l失败'
+      settlement_reward: '{game}§e§l奖励{score} * {rewardmultiple} / {rewardmultiplelist} = {money}'
+      jump: '{game}§a§l跳转至阶段{num}'
+    events:
+      start: '{game}§6§l随机事件-{event}'
+      stop: '{game}§6§l随机事件-{event} §6§l结束'
+      bomb:
+        name: '§6§l虚空爆破'
+        event: '{game}§e§l艺术就是派大星'
+      gravity:
+        name: '§6§l月球引力'
+        event:
+      rain:
+        name: '§6§l硫酸骤雨'
+        event: '§c§l{vic}被雨水攻击致死'
+      speed:
+        name: '§6§l急性抑郁'
+        event:
+      luck:
+        name: '§6§l愚人惊喜'
+        event: '{game}§e§l?§k| §e§l{score} §k|§e§l?'
+      kill:
+        name: '§6§l杀戮本能'
+        event: '§c§l杀杀杀|§c§l速度+40%'
+      sand:
+        name: '§6§l流沙禁地'
+        event:
+      break:
+        name: '§6§l破坏跃迁'
+        event: '{game}§e§l{playera}>-◎->{playerb}'
+      high:
+        name: '§6§l高层扰流'
+        event: '{game}§e§l☇{vic}☇|{game}§c§l☇☇☇{vic}☇☇☇'
+      life:
+        name: '§6§l临危受命'
+        event: '{game}§e§l新的指挥官已经产生{team}§e§l-{hero}|{game}§c§l好似-{team}§c§l-{hero} 全队停止移动10s'
+      fire:
+        name: '§6§l趁火打劫'
+        event: '{game}§e§l{playerteam}-{player}§e§l偷走了{bagteam}§e§l重要的东西|{game}§e§l{bagteam}§e§l-拿回了重要的东西|{game}§b§l{playerteam}-{player}§b§l运回{bagteam}§b§l重要的东西得到了{score}分'
+      only:
+        name: '§6§l孤立无援'
+        event:
+      see:
+        name: '§6§l明察秋毫'
+        event:
+    info:
+      player_tip: '{game}§2§l玩家信息'
+      gamer: '{game}§2§l玩家{player} 队伍{team} §2§l分数{score} 血量{blood}击杀{kill} 死亡{die} KD{kd}'
+      settlement_gamer: '{game}§2§l队伍{team}-玩家{player} §2§l分数{score} 击杀{kill} 死亡{die} KD{kd}'
+      other: '{game}§2§l旁观者{plyaer}'
+      map: "{game}§2§l阶段{stage} 时间{time}/{gametime} 事件{event} 事件时间{eventtime}/{etime}"
+    error:
+      notfoundinitbag: '{game}§4§l未找到可用的背包'
+      notfoundplayer: '{game}§4§l未找到玩家'
+      reward: '{game}§c§l奖励失败'
+      joinfail: '{game}§c§l加入失败'
+      votefail: '{game}§c§l投票跳过失败'
+      jumpfail: '{game}§c§l跳转阶段{num}失败'
+      eventfail: '{game}§c§l切换事件{event}失败'
